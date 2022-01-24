@@ -75,5 +75,12 @@ namespace OOP_Course.Lesson3._3_1
             else
                 Console.WriteLine("Недостаточно средств для изъятия");
         }
+        internal void Transfer(BankAccount31 account, int sum)
+        {
+            if (sum <= account._balance)
+                _balance += sum;
+            else
+                Console.WriteLine("Недостаточно средств для перевода");
+        }
     }
 }

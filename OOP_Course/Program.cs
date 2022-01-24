@@ -74,7 +74,11 @@ namespace ConsoleApp2
         static void StartLesson3()
         {
             var account311 = new BankAccount31(20);
+            account311.PrintAccountDetails();
             var account312 = new BankAccount31(20);
+            account312.PrintAccountDetails();
+            account312.Transfer(account311,10);
+            account312.PrintAccountDetails();
 
             ReverseString.Start();
         }
