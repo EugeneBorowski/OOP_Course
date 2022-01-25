@@ -6,6 +6,7 @@ using OOP_Course.Lesson2._2_4;
 using OOP_Course.Lesson2._2_5;
 using OOP_Course.Lesson3._3_1;
 using OOP_Course.Lesson3._3_2;
+using OOP_Course.Lesson3._3_3;
 
 
 namespace ConsoleApp2
@@ -14,7 +15,9 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
+
             //StartLesson2();
+            
             StartLesson3();
 
 
@@ -73,14 +76,19 @@ namespace ConsoleApp2
 
         static void StartLesson3()
         {
+            //3 - 1
             var account311 = new BankAccount31(20);
             account311.PrintAccountDetails();
             var account312 = new BankAccount31(20);
             account312.PrintAccountDetails();
-            account312.Transfer(account311,10);
+            account312.Transfer(account311, 10);
             account312.PrintAccountDetails();
 
+            //3 - 2
             ReverseString.Start();
+
+            //3 - 3
+            StringWorks.ParseMail();
         }
     }
 }

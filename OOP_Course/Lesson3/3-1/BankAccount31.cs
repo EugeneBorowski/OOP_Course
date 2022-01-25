@@ -6,7 +6,7 @@ namespace OOP_Course.Lesson3._3_1
     {
         private static int _id;
         private int _accountId;
-        private decimal _balance = 0;
+        private decimal _balance;
         internal enum AccountType
         {
             Дебетовый,
