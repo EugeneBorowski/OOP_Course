@@ -18,7 +18,7 @@ namespace ConsoleApp2
 
             //StartLesson2();
             
-            StartLesson3();
+            //StartLesson3();
 
 
 
