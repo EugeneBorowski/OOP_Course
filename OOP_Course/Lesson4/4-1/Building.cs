@@ -6,16 +6,30 @@ namespace OOP_Course.Lesson4._4_1
     {
         private static int _lastfreeId;
         private int _buildingid;
-        private int _levels;
+        private readonly int _levels;
         private float _height;
         private int _flats;
         private const int FlatsByLevel = 4;
-        private int _entrances;
+        private readonly int _entrances;
 
-        internal Building()
+        internal Building(int levels, int entrances)
         {
             GenerateId();
+            _levels = levels;
+            _entrances = entrances;
+            CalculateHeight();
+            CalculateTotalFlats();
         }
+
+        internal void PrintBuildingDetails()
+        {
+            Console.WriteLine("ID: {0}",_buildingid);
+            Console.WriteLine("Levels: {0}", _levels);
+            Console.WriteLine("Height: {0}m", _height);
+            Console.WriteLine("Flats: {0}", _flats);
+            Console.WriteLine("Entrances: {0}", _entrances);
+        }
+
         private void GenerateId()
         {
             _buildingid = ++_lastfreeId;

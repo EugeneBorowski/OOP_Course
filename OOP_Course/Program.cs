@@ -7,6 +7,7 @@ using OOP_Course.Lesson2._2_5;
 using OOP_Course.Lesson3._3_1;
 using OOP_Course.Lesson3._3_2;
 using OOP_Course.Lesson3._3_3;
+using OOP_Course.Lesson4._4_1;
 
 
 namespace ConsoleApp2
@@ -19,8 +20,10 @@ namespace ConsoleApp2
             //StartLesson2();
             
             //StartLesson3();
-
-
+            var building = new Building(16,5);
+            building.PrintBuildingDetails();
+            var building2 = new Building(22, 7);
+            building2.PrintBuildingDetails();
 
 
         }
